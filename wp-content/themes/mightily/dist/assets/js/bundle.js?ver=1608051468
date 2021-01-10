@@ -30917,5 +30917,3 @@ sliders.init();
 svg.init();
 
 },{"./modules/accordions.js":6,"./modules/animations.js":7,"./modules/buttons.js":8,"./modules/cards.js":9,"./modules/menu.js":10,"./modules/preloader.js":11,"./modules/sliders.js":12,"./modules/style-guide.js":13,"./modules/svg.js":14,"jquery":2}]},{},[15])
-
-//# sourceMappingURL=bundle.js.map
