@@ -30442,7 +30442,7 @@ module.exports = {
       return "";
     }
 
-    var preloaderCookie = getCookie("mightilyPreloader");
+    var preloaderCookie = true;
     var heroFiveTitles = document.querySelectorAll(".wp-block-mightily-hero-05 .title");
     var heroFiveTitleSpans = document.querySelectorAll(".wp-block-mightily-hero-05 .title span");
 
@@ -30732,26 +30732,6 @@ module.exports = {
 
           }); // Give the animation enough time to play
 
-          setTimeout(function () {
-            var fadeEffect = setInterval(function () {
-              // if we don't set opacity 1 in CSS, then
-              // it will be equaled to "" -- that's why
-              // we check it, and if so, set opacity to 1
-              if (!preloader.style.opacity) {
-                preloader.style.opacity = 1;
-              }
-
-              if (preloader.style.opacity > 0) {
-                preloader.style.opacity -= 0.1;
-              } else {
-                clearInterval(fadeEffect);
-              }
-            }, 100);
-          }, 5000); // Then hide it, so people can navigate the site like normal
-
-          setTimeout(function () {
-            preloader.style.display = "none";
-          }, 6100);
         });
       }
     }
